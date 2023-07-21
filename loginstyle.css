@@ -1,0 +1,186 @@
+* {
+    display: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e8e7ee;
+    font-family: "poppins" , sans-serif;
+    letter-spacing: 0.1rem;
+    gap: 2rem;
+    color: #1a1515;
+}
+
+.input-box {
+    position: relative;
+    width: 300px;
+}
+.firstname-input {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    color: rgb(49, 47, 47);
+    font-size: 1.8rem;
+}
+.firstname-lable {
+    position: absolute;
+    left: 0;
+    padding: 10px 5px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.lastname-input {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    color: rgb(32, 31, 31);
+    font-size: 1.8rem;
+}
+.lastname-lable {
+    position: absolute;
+    left: 0;
+    padding: 10px 5px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.username-input {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    color: rgb(27, 27, 27);
+    font-size: 1.8rem;
+}
+.username-lable {
+    position: absolute;
+    left: 0;
+    padding: 10px 5px;
+    color: rgba(26, 25, 25, 0.5);
+    font-size: 1.4rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.password-input {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    color: rgb(34, 32, 32);
+    font-size: 1.8rem;
+}
+.password-lable {
+    position: absolute;
+    left: 0;
+    padding: 10px 5px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.username-input:valid ~ label,
+.username-input:focus ~ label {
+    transform: translateY(-1.5rem);
+    color: rgb(162, 162, 198);
+    font-size: 0.75em;
+}
+.firstname-input:valid ~ label,
+.firstname-input:focus ~ label {
+    transform: translateY(-1.5rem);
+    color: rgb(162, 162, 198);
+    font-size: 0.75em;
+}
+.lastname-input:valid ~ label,
+.lastname-input:focus ~ label {
+    transform: translateY(-1.5rem);
+    color: rgb(162, 162, 198);
+    font-size: 0.75em;
+}
+.password-input:valid ~ label,
+.password-input:focus ~ label {
+    transform: translateY(-1.5rem);
+    color: rgb(162, 162, 198);
+    font-size: 0.75em;
+}
+h3 {
+    font-family: "lobster" , cursive;
+    color: #2d2a2a49;
+}
+
+button {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(21, 20, 20);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+p {
+    position: relative;
+    text-decoration-color: aqua;
+}
+.dropdown-menu li:hover {
+    background: #6f5cfb;
+}
+.submenu {
+    left: 0;
+    opacity: 0;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+}
+.submenu li{
+    width: 100%;
+    float: none;
+}
+.submenu li a:hover{
+    background: #2d2569;
+}
+.submenu li a{
+    background: #3116f8;
+}
+li:hover ul.submenu{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+.dropdown-menu a{
+    background: #aca3f3;
+    color: #ffff;
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+.dropdown-menu li:hover a{
+    background: #6f5cfb;
+}
+.dropdown-menu{
+    border: none;
+}
+
